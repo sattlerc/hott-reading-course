@@ -23,13 +23,14 @@ Homotopy type theory can serve as a constructive logical foundation with powerfu
 It is also an internal language for higher toposes, a kind of mathematical objects useful in certain areas of modern mathematics.
 
 This reading course serves as an introduction to this area.
-After completing this course, you should be able to:
+After completing this course, you will be able to:
 
 * explain the basic concepts of homotopy type theory,
 * reason in homotopy type theory on a basic level,
 * spot faults in logical deductions,
 * characterize the identity types of concretely given types,
 * classify types according to their truncation level,
+* manipulate higher inductive types,
 * translate between the different perspectives of univalent mathematics on mathematical objects (for example, abstract versus concrete groups),
 
 ## Prerequisites
