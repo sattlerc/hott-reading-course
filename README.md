@@ -43,7 +43,7 @@ After completing this course, you should be able to:
 For master students:
 * The prerequesites of DAT235/DIT577 apply.
 * You must have passed DAT350/DIT235 *Types for programs and proofs*.
-  Alternative, you must have documented knowledge in category theory.
+  Alternatively, you must have documented knowledge in category theory.
 
 For PhD students:
 * Contact the course-responsible teacher with your background in type theory or category theory.
