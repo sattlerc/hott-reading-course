@@ -83,7 +83,7 @@ More details will be announced in time before the exam.
 
 ### For PhD students
 
-If take this course as a PhD course, you need to do some additional work to pass.
+If you take this course as a PhD course, you need to do some additional work to pass.
 * You must be active in our weekly discussions.
   This includes giving feedback to students who present exercise solutions.
   Additionally, you may be asked to give feedback for students who hand in electronic solutions.
@@ -93,7 +93,6 @@ If take this course as a PhD course, you need to do some additional work to pass
 
 The weekly meetings will be scheduled according to the results of [this poll](https://choodle.portal.chalmers.se/YZVDfAyYLAyTXKVW), so please vote (answers are private).
 It will take place on the Johanneberg campus.
-No guarantees are made about the ability to participate remotely.
 
 The date for the final exam will be announced a month before the end of course.
 It will be scheduled in consideration of the participants' schedules.
