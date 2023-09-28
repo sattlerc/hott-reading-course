@@ -14,7 +14,7 @@ Therefore, you must have the capacity and motivation to read and digest material
 * ...?
 * Examiner (DAT235/DIT577): [Ana Bove](https://www.cse.chalmers.se/~bove/)
 
-## Course purpose
+## Purpose
 
 Homotopy type theory is a young area at the intersection of computer science, mathematical logic, homotopy theory.
 It is based on the discovery of rich higher structure in the identity type of Martin-Löf type theory.
@@ -26,7 +26,7 @@ This reading course serves as an introduction to this area.
 After completing this course, you will be able to:
 
 * explain the basic concepts of homotopy type theory,
-* reason in homotopy type theory on a basic level,
+* reason in homotopy type theory on a formal and informal level,
 * spot faults in logical deductions,
 * characterize the identity types of concretely given types,
 * classify types according to their truncation level,
@@ -41,13 +41,16 @@ For master students:
 
   Alternatively, you must have documented knowledge in category theory.
   If you have not seen type theories before, it may take you extra effort at the beginning of the course to become familiar with these kinds of logical systems.
+  Chapter I of the course book can bring you up to speed.
 
 For PhD students:
 * Contact the course-responsible teacher with your background in type theory or category theory.
 
-## Course design
+## Design
 
-We will read Egbert Rijke's *Introduction to Homotopy Type Theory* and selected chapters of *Homotopy Type Theory: Univalent Foundations of Mathematics* (see [Literature](#literature)).
+We will read (see [Literature](#literature)):
+* Egbert Rijke's *Introduction to Homotopy Type Theory* (going quickly over sections in Chapter I that are covered by prerequisites),
+* selected chapters of *Homotopy Type Theory: Univalent Foundations of Mathematics* .
 
 For every week, the course-responsible teacher will select sections for you to read and exercises to solve.
 You should do this on your own (you are welcome to form study groups).
@@ -90,7 +93,7 @@ If you take this course as a PhD course, you need to do some additional work to 
   Additionally, you may be asked to give feedback for students who hand in electronic solutions.
 * You need to achieve a grade of at least 4 in the exam.
 
-## Course schedule
+## Schedule
 
 The weekly meetings will be scheduled according to the results of [this poll](https://choodle.portal.chalmers.se/YZVDfAyYLAyTXKVW), so please vote (answers are private).
 It will take place on the Johanneberg campus.
@@ -98,7 +101,7 @@ It will take place on the Johanneberg campus.
 The date for the final exam will be announced a month before the end of course.
 It will be scheduled in consideration of the participants' schedules.
 
-## Course literature
+## Literature
 
 * Egbert Rijke's [*Introduction to Homotopy Type Theory*](https://arxiv.org/abs/2212.11082).
 
