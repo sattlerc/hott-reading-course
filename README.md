@@ -49,7 +49,7 @@ For PhD students:
 ## Design
 
 We will read (see [Literature](#literature)):
-* Egbert Rijke's *Introduction to Homotopy Type Theory* (the prerequisites cover some sections in Chapter I; we will only go over them briefly to mmake sure everything is one the same page),
+* Egbert Rijke's *Introduction to Homotopy Type Theory* (the prerequisites cover some sections in Chapter I; we will go over them only briefly to make sure everything is one the same page),
 * selected chapters of *Homotopy Type Theory: Univalent Foundations of Mathematics*.
 
 For every week, the course-responsible teacher will select sections for you to read and exercises to solve.
