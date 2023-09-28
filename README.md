@@ -41,7 +41,7 @@ For master students:
 
   Alternatively, you must have documented knowledge in category theory.
   If you have not seen type theories before, it may take you extra effort at the beginning of the course to become familiar with these kinds of logical systems.
-  Chapter I of the course book can bring you up to speed.
+  Chapter I (particularly Sections 1–4) of the course book can bring you up to speed.
 
 For PhD students:
 * Contact the course-responsible teacher with your background in type theory or category theory.
@@ -49,8 +49,8 @@ For PhD students:
 ## Design
 
 We will read (see [Literature](#literature)):
-* Egbert Rijke's *Introduction to Homotopy Type Theory* (going quickly over sections in Chapter I that are covered by prerequisites),
-* selected chapters of *Homotopy Type Theory: Univalent Foundations of Mathematics* .
+* Egbert Rijke's *Introduction to Homotopy Type Theory* (the prerequisites cover some sections in Chapter I; we will only go over them briefly to mmake sure everything is one the same page),
+* selected chapters of *Homotopy Type Theory: Univalent Foundations of Mathematics*.
 
 For every week, the course-responsible teacher will select sections for you to read and exercises to solve.
 You should do this on your own (you are welcome to form study groups).
