@@ -47,9 +47,9 @@ For PhD students:
 
 ## Course design
 
-We will read Egbert Rijke's *Introduction to Homotopy Type Theory* (see [Literature](#literature)).
+We will read Egbert Rijke's *Introduction to Homotopy Type Theory* and selected chapters of *Homotopy Type Theory: Univalent Foundations of Mathematics* (see [Literature](#literature)).
 
-For every week, the course-responsible teacher will select sections in the book for you to read and exercises to solve.
+For every week, the course-responsible teacher will select sections for you to read and exercises to solve.
 You should do this on your own (you are welcome to form study groups).
 In particular, you should solve all the selected exercises to the best of your ability.
 
@@ -102,14 +102,13 @@ It will be scheduled in consideration of the participants' schedules.
 
 * Egbert Rijke's [*Introduction to Homotopy Type Theory*](https://arxiv.org/abs/2212.11082).
 
-  This is the book this course is based on.
+  This is the main book the course is based on.
   A printed version is due to appear, but the above version will remain freely available.
 
 * [*Homotopy Type Theory: Univalent Foundations of Mathematics*](https://homotopytypetheory.org/book/) by the Univalent Foundations Program.
 
   This is a secondary resource.
-  You may consult it to go deeper into some of the material or to find different perspectives.
-  It may be used for some exercises.
+  We may use it for some further topics such as higher inductive types.
 
 ## Communication
 
