@@ -5,13 +5,14 @@ Autumn term 2023, study period 2, 7.5 credits
 * For master students, this is an instance of *Research-oriented course in Computer Science and Engineering* (Chalmers: [DAT235](https://www.student.chalmers.se/sp/course?course_id=36287), GU: [DIT577](https://kursplaner.gu.se/pdf/kurs/en/DIT577)).
 * PhD students can take this course as a PhD course.
 
+**Note**.
 This course is run as a self-study reading course.
 Therefore, you must have the capacity and motivation to read and digest material without teacher presence.
 
 ## Teaching team
 
-* Course-responsible teacher: [Christian Sattler](https://www.cse.chalmers.se/~sattler/)
-* ...?
+* Teacher (course-responsible): [Christian Sattler](https://www.cse.chalmers.se/~sattler/)
+* Teacher: [Matthias Hutzler](https://www.chalmers.se/personer/hutzler/)
 * Examiner (DAT235/DIT577): [Ana Bove](https://www.cse.chalmers.se/~bove/)
 
 ## Purpose
@@ -49,7 +50,7 @@ For PhD students:
 ## Design
 
 We will read (see [Literature](#literature)):
-* Egbert Rijke's *Introduction to Homotopy Type Theory* (the prerequisites cover some sections in Chapter I; we will go over them only briefly to make sure everyone is one the same page),
+* Egbert Rijke's *Introduction to Homotopy Type Theory* (the prerequisites cover some sections in Chapter I; we will use them to make sure everyone is one the same page),
 * selected chapters of *Homotopy Type Theory: Univalent Foundations of Mathematics*.
 
 For every week, the course-responsible teacher will select sections for you to read and exercises to solve.
