@@ -117,7 +117,7 @@ It will be scheduled in consideration of the participants' schedules.
 ## Communication
 
 We use [Zulip](https://lot.zulipchat.com/#narrow/stream/407220-HoTT-reading-course) for announcements and online discussions.
-Click the link to create an account.
+To create an account, use [this link](https://lot.zulipchat.com/join/tipdqgohyzsxnmxziqumen3q/) and change one letter so that the URL contains the word *vip* (spam protection).
 Our stream is called *HoTT reading course*.
 
 The stream is organized into *topics* (Zulip lingo for threads).
