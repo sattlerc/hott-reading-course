@@ -45,7 +45,7 @@ For master students:
   Chapter I (particularly Sections 1–4) of the course book can bring you up to speed.
 
 For PhD students:
-* Contact the course-responsible teacher with your background in type theory or category theory.
+* Contact the course-responsible teacher with your background.
 
 ## Design
 
