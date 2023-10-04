@@ -7,7 +7,7 @@ Autumn term 2023, study period 2, 7.5 credits
 
 **Note**.
 This course is run as a self-study reading course.
-Therefore, you must have the capacity and motivation to read and digest material without teacher presence.
+Therefore, you must have the motivation and capacity to digest material without teacher presence.
 
 ## Teaching team
 
