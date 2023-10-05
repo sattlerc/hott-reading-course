@@ -20,7 +20,7 @@ Therefore, you must have the motivation and capacity to digest material without 
 Homotopy type theory is a young area at the intersection of computer science, mathematical logic, homotopy theory.
 It is based on the discovery of rich higher structure in the identity type of Martin-Löf type theory.
 This relates to homotopy theory, an area of mathematics.
-Homotopy type theory can serve as a constructive logical foundation with powerful extensionality principles ("when are two objects to be equal?").
+Homotopy type theory can serve as a constructive logical foundation with powerful extensionality principles ("when are two elements of a given type equal?").
 It is also an internal language for higher toposes, a kind of mathematical objects useful in certain areas of modern mathematics.
 
 This reading course serves as an introduction to this area.
