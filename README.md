@@ -75,15 +75,14 @@ Additionally:
 
 To pass this course, you need to:
 * successfully present exercise solutions in our weekly meetings at least once,
-* pass a final written exam.
+* pass a final written hall exam.
 
 Beyond the feedback you receive when you present your solution, your exercise solutions will not be graded.
 However, you are welcome to grade each other informally, particularly for exercise solutions that were not presented due to lack of time.
 
-If you have satisfied the exercise presentation requirement as above, you are eligible for the exam.
-This will be a four-hour written hall exam with no aids allowed.
-The exam problems will be similar to the exercises you have solved.
-It may include problems of different levels for the purpose of grade differentiation.
+The exam will be a four hours with no aids allowed.
+The problems will of similar format to the exercises you have solved.
+They may have different difficulties for the purpose of grade differentiation.
 More details will be announced in time before the exam.
 
 ### For PhD students
