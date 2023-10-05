@@ -81,7 +81,7 @@ Beyond the feedback you receive when you present your solution, your exercise so
 However, you are welcome to grade each other informally, particularly for exercise solutions that were not presented due to lack of time.
 
 The exam will be a four hours with no aids allowed.
-The problems will of similar format to the exercises you have solved.
+The problems will be of similar format to the exercises you have solved.
 They may have different difficulties for the purpose of grade differentiation.
 More details will be announced in time before the exam.
 
