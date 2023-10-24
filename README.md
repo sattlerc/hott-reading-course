@@ -53,7 +53,7 @@ We will read (see [Literature](#literature)):
 * Egbert Rijke's *Introduction to Homotopy Type Theory* (the prerequisites cover some sections in Chapter I; we will use them to make sure everyone is one the same page),
 * selected chapters of *Homotopy Type Theory: Univalent Foundations of Mathematics*.
 
-For every week, the course-responsible teacher will select sections for you to read and exercises to solve.
+For every week, the course-responsible teacher will [select](schedule.md) sections for you to read and exercises to solve.
 You should do this on your own (you are welcome to form study groups).
 In particular, you should solve all the selected exercises to the best of your ability.
 
@@ -97,6 +97,9 @@ If you take this course as a PhD course, you need to do some additional work to 
 
 The weekly meetings will be scheduled according to the results of [this poll](https://choodle.portal.chalmers.se/YZVDfAyYLAyTXKVW), so please vote (answers are private).
 It will take place on the Johanneberg campus.
+
+Your weekly reading and digestion tasks are [collected here](schedule.md).
+Throughout the course, we will monitor your workload based on your feedback and set tasks in line with the time you are expected to spend.
 
 The date for the final exam will be announced a month before the end of course.
 It will be scheduled in consideration of the participants' schedules.
