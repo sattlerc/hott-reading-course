@@ -1,11 +1,19 @@
 # Weekly schedule
 
+**Terminology**:
+*Reading* below means reading and **digesting** (which typically includes a lot of thinking and processing).
+After properly reading something, you should be comfortable with the material and be able to explain it to someone else.
+The exercises are there to help you and us figure out whether you have reached that level.
+
 ## Course week 1 (October 30 – November 3)
 
 Tasks before the weekly meeting:
 
-* Read and digest the introduction (including "about this book") and Sections 1–3.
-* Do the exercises of Sections 1–3.
-  If you are short on time, choose 3 of the 6 exercises in Section 3 to focus on.
+* Read introduction (including "about this book")
+* Read Sections 1–2 and do all the exercises
+* Read Section 3 and choose and solve 3 of the 6 exercises.
+
+Let us know on Zulip if the workload is too low or high.
+If you cannot manage timewise, leave Section 3 for later.
 
 Meeting: TBD

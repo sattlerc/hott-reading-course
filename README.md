@@ -53,9 +53,15 @@ We will read (see [Literature](#literature)):
 * Egbert Rijke's *Introduction to Homotopy Type Theory* (the prerequisites cover some sections in Chapter I; we will use them to make sure everyone is one the same page),
 * selected chapters of *Homotopy Type Theory: Univalent Foundations of Mathematics*.
 
-For every week, the course-responsible teacher will [select](schedule.md) sections for you to read and exercises to solve.
+For every week, the course-responsible teacher will select [sections for you to read and exercises to solve](schedule.md).
 You should do this on your own (you are welcome to form study groups).
 In particular, you should solve all the selected exercises to the best of your ability.
+
+It is up to you how to solve the exercises:
+* on paper,
+* in a proof assistant based on type theory such as Agda or Coq (if you are familiar with it).
+
+There are formal solutions to every the exercises, but you should look up solution only after you have solved the exercises by yourself.
 
 Every week, we will have a two-hour meeting where:
 * we will discuss the sections you have read,
