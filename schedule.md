@@ -16,4 +16,4 @@ Tasks before the weekly meeting:
 Let us know on Zulip if the workload is too low or high.
 If you cannot manage timewise, leave Section 3 for later.
 
-Meeting: TBD
+Meeting: **November 3, 15:15–17:00** in **EF** (lecture hall on 6th floor of EDIT building)

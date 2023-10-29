@@ -101,8 +101,14 @@ If you take this course as a PhD course, you need to do some additional work to 
 
 ## Schedule
 
-The weekly meetings will be scheduled according to the results of [this poll](https://choodle.portal.chalmers.se/YZVDfAyYLAyTXKVW), so please vote (answers are private).
-It will take place on the Johanneberg campus.
+The weekly meetings will take place on **Fridays** at **15:15–17:00** in **EF** (lecture hall on 6th floor of EDIT building).
+This has determined by [this poll](https://choodle.portal.chalmers.se/YZVDfAyYLAyTXKVW).
+
+In the first week, we will have an optional introduction meeting on **Monday, October 30** at **13:15–14:00** in **6217** (meeting room on 6th floor of EDIT building, near staircase D).
+You can come if you:
+* need help to get started,
+* want to meet people and form study groups,
+* want to discuss things with me in person.
 
 Your weekly reading and digestion tasks are [collected here](schedule.md).
 Throughout the course, we will monitor your workload based on your feedback and set tasks in line with the time you are expected to spend.
