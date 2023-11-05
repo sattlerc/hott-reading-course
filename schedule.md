@@ -17,3 +17,11 @@ Let us know on Zulip if the workload is too low or high.
 If you cannot manage timewise, leave Section 3 for later.
 
 Meeting: **November 3, 15:15–17:00** in **EF** (lecture hall on 6th floor of EDIT building)
+
+## Course week 2 (November 6 – November 10)
+
+Tasks before the weekly meeting:
+
+* Read Sections 4–6 and do all the exercises
+
+Meeting: **November 10, 15:15–17:00** in **EF** (lecture hall on 6th floor of EDIT building)
