@@ -9,8 +9,8 @@ The exercises are there to help you and us figure out whether you have reached t
 
 Tasks before the weekly meeting:
 
-* Read introduction (including "about this book")
-* Read Sections 1–2 and do all the exercises
+* Read introduction (including "about this book").
+* Read Sections 1–2 and do all the exercises.
 * Read Section 3 and choose and solve 3 of the 6 exercises.
 
 Let us know on Zulip if the workload is too low or high.
@@ -22,6 +22,8 @@ Meeting: **November 3, 15:15–17:00** in **EF** (lecture hall on 6th floor of E
 
 Tasks before the weekly meeting:
 
-* Read Sections 4–6 and do all the exercises
+* Read Sections 4–6 and do all the exercises.
+* Write on Zulip if you have trouble with anything.
+  You can also arrange meetings with teachers in person.
 
-Meeting: **November 10, 15:15–17:00** in **EF** (lecture hall on 6th floor of EDIT building)
+Meeting: **November 10, 15:15–17:00** in **EF**
