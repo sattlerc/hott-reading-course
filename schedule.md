@@ -23,6 +23,11 @@ Meeting: **November 3, 15:15–17:00** in **EF** (lecture hall on 6th floor of E
 Tasks before the weekly meeting:
 
 * Read Sections 4–6 and do all the exercises.
+  If you feel there are too many exercises, focus on the following:
+  - Section 4: 4.2, 4.3, perhaps 4.1
+  - Section 5: 5.1, 5.2, 5.3, 5.4, perhaps 5.6 (if you did 4.1)
+  - Section 6: 6.1, 6.2, 6.3
+
 * Write on Zulip if you have trouble with anything.
   You can also arrange meetings with teachers in person.
 
