@@ -28,6 +28,11 @@ Tasks before the weekly meeting:
   - Section 5: 5.1, 5.2, 5.3, 5.4, perhaps 5.6 (if you did 4.1)
   - Section 6: 6.1, 6.2, 6.3
 
+  Now that we discussed the formal rules of type theory in the first session, we can do constructions in type theory informally, using natural language (like Egbert does).
+  That is, we do not need to present everything in terms of deduction trees.
+  This should make the exercises less tedious.
+  (The understanding is that you can elaborate informal reasoning to formal deductions using the rules of type theory when someone asks you.)
+
 * Write on Zulip if you have trouble with anything.
   You can also arrange meetings with teachers in person.
 
