@@ -37,3 +37,20 @@ Tasks before the weekly meeting:
   You can also arrange meetings with teachers in person.
 
 Meeting: **November 10, 15:15–17:00** in **EF**
+
+## Course week 3 (November 13 – November 17)
+
+Tasks before the weekly meeting:
+
+* Read the introduction to Chapter II and Sections 9–11.
+  Do at least the following exercises (and more if you have time):
+  - Section 9: 9.1, 9.2, 9.3, 9.4
+  - Section 10: 10.1, 10.2 (really important), 10.3, (10.6, 10.7, 10.8)
+  - Section 11: 11.1, 11.3, 11.4, 11.5, (11.8, 11.9, 11.10)
+
+  Try to find short, abstract proofs using the results that are already available to you.
+
+* Write on Zulip if you have trouble with anything.
+  The teachers are available to meet in person (use Zulip to figure out a good time).
+
+Meeting: **November 17, 15:15–17:00** in **EF**
