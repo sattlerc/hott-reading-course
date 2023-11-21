@@ -54,3 +54,17 @@ Tasks before the weekly meeting:
   The teachers are available to meet in person (use Zulip to figure out a good time).
 
 Meeting: **November 17, 15:15–17:00** in **EF**
+
+## Course week 4 (November 20 – November 24)
+
+Tasks before the weekly meeting:
+
+* Read Sections 12 and 13.
+  Do at least the following exercises (and more if you have time):
+  - Section 12: 12.1, 12.2, 12.3(a), 12.6, 12.8, (12.5, 12.11, 12.12)
+  - Section 13: ???
+
+* Write on Zulip if you have trouble with anything.
+  The teachers are available to meet in person (use Zulip to figure out a good time).
+
+Meeting: **November 24, 15:15–17:00** in **EF**
