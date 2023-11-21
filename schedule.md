@@ -62,7 +62,7 @@ Tasks before the weekly meeting:
 * Read Sections 12 and 13.
   Do at least the following exercises (and more if you have time):
   - Section 12: 12.1, 12.2, 12.3(a), 12.6, 12.8, (12.5, 12.11, 12.12)
-  - Section 13: 13.2(a), 13.3, 13.4, 13.8, (13.10, 13.16)
+  - Section 13: 13.2(a), 13.3, 13.4, 13.8, (13.10, 13.13, 13.16)
 
 * Write on Zulip if you have trouble with anything.
   The teachers are available to meet in person (use Zulip to figure out a good time).
