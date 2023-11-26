@@ -68,3 +68,18 @@ Tasks before the weekly meeting:
   The teachers are available to meet in person (use Zulip to figure out a good time).
 
 Meeting: **November 24, 15:15–17:00** in **EF**
+
+## Course week 5 (November 27 – December 1)
+
+Tasks before the weekly meeting:
+
+* Read Sections 14–16 (they are rather short).
+  Do at least the following exercises (and more if you have time):
+  - Section 14: 14.1 (see Definition 8.1.1 for the notion of decidable type), 14.2, 14.3, 14.4, (14.8 (related to Dominik's solution to 3.5))
+  - Section 15: 15.1, 15.3, 15.4 (find the missing assumption in (c)), (15.2, 15.5)
+  - Section 16: 16.2, 16.4, 16.5(a), 16.8, (16.3, 16.9)
+
+* Write on Zulip if you have trouble with anything.
+  The teachers are available to meet in person (use Zulip to figure out a good time).
+
+Meeting: **December 1, 15:15–17:00** in **EF**
