@@ -84,7 +84,7 @@ Tasks before the weekly meeting:
 
 Meeting: **December 1, 15:15–17:00** in **EF**
 
-## Course week 5 (December 4 – December 8)
+## Course week 6 (December 4 – December 8)
 
 Tasks before the weekly meeting:
 
