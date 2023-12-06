@@ -97,4 +97,4 @@ Tasks before the weekly meeting:
 * Write on Zulip if you have trouble with anything.
   The teachers are available to meet in person (use Zulip to figure out a good time).
 
-Meeting: **December 1, 15:15–17:00** in **EF**
+Meeting: **December 8, 15:15–17:00** in **EF**
