@@ -90,9 +90,9 @@ Tasks before the weekly meeting:
 
 * Read Sections 17–19 (you can skip Subsections 17.3, 18.3, 18.4).
   Do at least the following exercises (and more if you have time):
-  - Section 17: 17.1, 17.2, 17.6, 17.9, 17.10, (17.2, 17.5, 17.11)
+  - Section 17: 17.1, 17.6, 17.9, 17.10, (17.2, 17.5, 17.11)
   - Section 18: 18.1, 18.6, (18.3, 18.8)
-  - Section 19: 19.3, 19.4, 9.12, (9.16)
+  - Section 19: 19.3, 19.4, 19.12, (19.16)
 
 * Write on Zulip if you have trouble with anything.
   The teachers are available to meet in person (use Zulip to figure out a good time).
