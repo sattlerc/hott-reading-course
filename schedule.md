@@ -98,3 +98,20 @@ Tasks before the weekly meeting:
   The teachers are available to meet in person (use Zulip to figure out a good time).
 
 Meeting: **December 8, 15:15–17:00** in **EF**
+
+## Course week 7 (December 11 – December 15)
+
+Tasks before the weekly meeting:
+
+* Read Sections 21 and 22.
+  Do at least the following exercises (and more if you have time):
+  - Section 21: 21.1, 21.2, 21.4, (21.3, 21.5, 21.6)
+  - Section 22: 22.1, 22.2, 22.3, 22.4, (22.11)
+
+* Write on Zulip if you have trouble with anything.
+  The teachers are available to meet in person (use Zulip to figure out a good time).
+
+Meeting: **December 15, 15:15–17:00** in **EF**
+
+This is the last regular meeting.
+We may have another meeting after Christmas, but no new content will be covered.
