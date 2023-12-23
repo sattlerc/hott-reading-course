@@ -89,7 +89,10 @@ However, you are welcome to grade each other informally, particularly for exerci
 The exam will be a four hours with no aids allowed.
 The problems will be of similar format to the exercises you have solved.
 They may have different difficulties for the purpose of grade differentiation.
-More details will be announced in time before the exam.
+
+The exam will take place on **Friday, January 12** at **14–18** in the EDIT building (room to be announced).
+
+**Update (December 23).** Here is a [practice exam](exam-practice.pdf).
 
 ### For PhD students
 
