@@ -115,3 +115,12 @@ Meeting: **December 15, 15:15–17:00** in **EF**
 
 This is the last regular meeting.
 We may have another meeting after Christmas, but no new content will be covered.
+
+## Special pre-exam meeting
+
+Meeting: **January 10, 16:15–18:00** in **EF**
+
+* We will discuss the [practice exam](exam-practice.pdf?raw=true) and other questions you may have before the upcoming exam.
+
+* This is the last opportunity to present an exercise.
+  For this purpose, we will count the practice exam problems as exercises (excluding Problems 3 and 6).
