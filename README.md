@@ -119,7 +119,9 @@ You can come if you:
 Your weekly reading and digestion tasks are [collected here](schedule.md).
 Throughout the course, we will monitor your workload based on your feedback and set tasks in line with the time you are expected to spend.
 
-The exam will take place on **Friday, January 12** at **14–18** in the EDIT building (room to be announced).
+There is a special [pre-exam meeting](schedule.md#special-pre-exam-meeting) on **Wednesday, January 10** at **16:15–18:00** in **EF**.
+
+The exam takes place on **Friday, January 12** at **14–18** in **EE**
 You will need to bring identification.
 
 ## Literature
