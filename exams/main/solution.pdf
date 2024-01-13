@@ -1,0 +1,369 @@
+\documentclass[11pt]{article}
+
+\usepackage[left=3cm,right=3cm,top=3cm,bottom=3cm]{geometry}
+\usepackage{amssymb,amsmath,amsthm}
+\usepackage{mathtools}
+\usepackage{enumitem}
+\usepackage{xcolor}
+\usepackage{tabularx}
+\usepackage{tikz-cd}
+\usepackage{parskip}
+
+\newcolumntype{Y}{>{\centering\arraybackslash}X}
+
+\DeclarePairedDelimiter\trunc\lVert\rVert
+
+\newcommand{\U}{\mathcal{U}}
+\newcommand{\N}{\mathbb{N}}
+\newcommand{\Z}{\mathbb{Z}}
+\newcommand{\F}{\mathbb{F}}
+\newcommand{\id}{\mathsf{id}}
+\newcommand{\ap}{\mathsf{ap}}
+
+\newcommand{\Fin}{\mathsf{Fin}}
+\newcommand{\refl}{\mathsf{refl}}
+\newcommand{\base}{\mathsf{base}}
+\newcommand{\Sloop}{\mathsf{loop}}
+\newcommand{\indeq}{\mathsf{ind\mbox{-}eq}}
+\newcommand{\inv}{\mathsf{inv}}
+
+\newcommand{\Nsucc}{S}
+\newcommand{\Nadd}{\mathsf{add}}
+\newcommand{\Nmul}{\mathsf{mul}}
+
+\newcommand{\unit}{\mathbf{1}}
+
+\newcommand{\fst}{\mathsf{pr}_1}
+\newcommand{\snd}{\mathsf{pr}_2}
+
+\newcommand{\isEquiv}{\mathsf{is\mbox{-}equiv}}
+\newcommand{\isConst}{\mathsf{is\mbox{-}constant}}
+
+\newcommand{\const}{\mathsf{const}}
+\newcommand{\fib}{\mathsf{fib}}
+
+
+\begin{document}
+
+\title{Introduction to homotopy type theory: exam}
+\author{DAT235/DIT577/PhD reading course}
+\date{2024, January 12}
+
+\maketitle
+
+\begin{itemize}
+\item
+Grade scale:\qquad
+\begin{tabularx}{10cm}{|c|Y|Y|Y|Y|}
+  \hline
+  Fraction of points & $\geq 0$ & $\geq 2/5$ & $\geq 3/5$ & $\geq 4/5$
+  \\\hline
+  Grade & U & 3 & 4 & 5
+  \\\hline
+\end{tabularx}
+\item
+Time: 4 hours
+\item
+No aids allowed.
+\item
+You may use familiar facts from the course book or our discussions without justification, provided they do not already include the statement to be proven or depend on it.
+\item
+The axioms of function extensionality and univalence may only be used where stated. 
+\end{itemize}
+
+\newpage
+
+\newcommand{\fix}{\mathsf{fix}}
+
+\begin{enumerate}
+\item \label{path-symmetry}
+\textbf{[4 points]}
+Fix a type $A$.
+The equality type of $A$ has an induction principle involving
+\[
+\indeq_{a,P} : P(a, \refl_a) \to \prod_{x : A} \prod_{p : a = x} P(x, p)
+\]
+for $a : A$ and a family of types $P(x, p)$ indexed by $x : A$ and $p : a = x$.
+
+Construct the following elements.
+Explicitly state the parameter $P$ when you use $\indeq$.
+\begin{enumerate}[ref=(\alph*)]
+\item \label{path-symmetry:sym}
+$\displaystyle{
+\mathsf{f} : \prod_{x, y : A} x = y \to y = x
+},$
+\item \label{path-symmetry:sym-coh}
+$\displaystyle{
+\mathsf{g} : \prod_{x, y : A} \prod_{p : x = y} f(y, x, f(x, y, p)) = p
+}.$
+\end{enumerate}
+\end{enumerate}
+
+{\color{purple}
+Recall that the eliminator satisfies the judgmental equality $\indeq_{a,P}(d, a, \refl_a) \doteq d$.
+There are several ways to define $f$ and $g$, here is an easy one.
+
+For \ref{path-symmetry:sym}, we can take
+\begin{align*}
+f(x) &: \prod_{y : A} \prod_{p : x = y} y = x
+,\\
+f(x) &:= \indeq_{x,P_x}(\refl_x)
+\end{align*}
+where $P_x(y, p) := (y = x)$.
+Note that
+\[
+f(x, x, \refl_x) \doteq \indeq_{x,P}(\refl_x, x, \refl_x) \doteq \refl_x
+\rlap{.}
+\]
+For \ref{path-symmetry:sym-coh}, we take
+\begin{align*}
+g(x) :& \prod_{y : A} \prod_{p : x = y} f(y, x, f(x, y, p)) = p
+,\\
+g(x) &:= \indeq_{x,Q_x}(d_x, y, p)
+\end{align*}
+where $Q_x(y, p) := (f(y, x, f(x, y, p)) = p)$.
+It remains to define
+\[
+d_x : f(x, x, f(x, x, \refl_x)) = \refl_x
+\rlap{.}
+\]
+But
+\[
+f(x, x, f(x, x, \refl_x)) \doteq f(x, x, \refl_x) \doteq \refl_x
+\rlap{,}
+\]
+so we can set $d_x := \refl_{\refl_x}$.
+}
+
+\begin{enumerate}[resume]
+\item \label{truncation-level}
+\textbf{[4 points]}
+Given a type $A$, define what it means:
+\begin{enumerate}[ref=(\alph*)]
+\item \label{truncation-level:contractible}
+for $A$ to be contractible,
+\item \label{truncation-level:general}
+for $A$ to have truncation level $n$ where $n : \Z_{\geq -2}$.
+\end{enumerate}
+\end{enumerate}
+
+{\color{purple}
+For \ref{truncation-level:contractible}, contractibility of $A$ is defined as the type
+\[
+\sum_{a:A}\prod_{x:A} x = a
+\rlap{.}
+\]
+For \ref{truncation-level:general}, we use induction on $n$.
+In the base case, $A$ is defined to have truncation level $-2$ if it is contractible.
+In the induction step, $A$ is defined to have truncation level $n + 1$ if, for all $x, y : A$, the equality type $x =_A y$ has truncation level $n$.
+}
+
+\begin{enumerate}[resume]
+\item \label{rolling-rule}
+\textbf{[4 points]}
+The type of \emph{fixpoints} of a function $u : X \to X$ is defined as
+\[
+\fix(u) := \sum_{x:X} u(x) = x
+\rlap{.}
+\]
+Given $f : A \to B$ and $g : B \to A$, show that $\fix(g \circ f) \simeq \fix(f \circ g)$.
+\end{enumerate}
+
+{\color{purple}
+Here is an elegant way to construct this equivalence.
+There are other, more concrete ways.
+
+Consider the type
+\[
+T := \sum_{a : A} \sum_{b : B} f(a) = b \times g(b) = a
+\rlap{.}
+\]
+Since equivalences are composable and invertible, it suffices to show that $T$ is equivalent to $\fix(g \circ f)$ and $\fix(f \circ g)$.
+We only show $T \simeq \fix(g \circ f)$, the other case is dual.
+
+Reassociating dependent sums, we have
+\[
+T \simeq \sum_{a : A} \sum_{(b, p) : \sum_{b : B} f(a) = b} g(b) = a
+\rlap{.}
+\]
+Note that $\sum_{b : B} f(a) = b$ is contractible with center $(f(a), \refl_{f(a)})$.
+The map
+\[
+\unit \to \sum_{b : B} f(a) = b
+\]
+selecting the center is an equivalence.
+Since dependent sums preserve equivalences, we have
+\[
+T \simeq \sum_{a : A} \sum_1 g(f(a)) = a \simeq \sum_{a : A} g(f(a)) = a
+\rlap{.}
+\]
+}
+Dually, we have
+
+\begin{enumerate}[resume]
+\item \label{equality-proposition}
+\textbf{[4 points]}
+Given a type $A$, show that the following are logically equivalent for $x, y : A$:
+\begin{enumerate}[label={(\arabic*)}]
+\item \label{equality-proposition:truncation}
+the propositional truncation $\trunc{x = y}$,
+\item \label{equality-proposition:impredicative}
+$Q(x) \simeq Q(y)$ for all families $Q$ of propositions indexed by $A$.
+\end{enumerate}
+\end{enumerate}
+
+{\color{purple}
+Let \ref{equality-proposition:truncation} be given.
+Consider a family of propositions $Q$ indexed by $A$.
+To construct an equivalence between $Q(x)$ and $Q(y)$, it suffices to construct maps in both directions since both sides are propositions.
+So given $Q(x)$, let us show $Q(y)$ (the other case is dual).
+Given $x = y$, we have $Q(y)$ by transporting the given element of $Q(x)$.
+So using the universal property of the propositional truncation ($Q(y)$ is proposition), given $\trunc{x = y}$, we have $Q(y)$.
+But $\trunc{x = y}$ holds by \ref{equality-proposition:truncation}.
+
+Now let \ref{equality-proposition:impredicative} be given.
+We set $Q(a) := \trunc{x = a}$, a proposition.
+We have $\eta(\refl_x) : Q(x)$.
+By \ref{equality-proposition:impredicative}, we then have $Q(y)$, which is \ref{equality-proposition:truncation}.
+}
+
+\begin{enumerate}[resume]
+\item \label{grothendieck-correspondence}
+\textbf{[4 points]}
+Let $\U$ be a univalent universe with $I : \U$.
+We have a function
+\[
+h : \U^I \to \sum_{X : \U} I^X
+\]
+sending $Y : I \to U$ to $(\sum_{i:I} Y(i), \fst)$.
+Define a function $k$ in the opposite direction with $k \circ h \sim \id$.
+You may use function extensionality.
+\end{enumerate}
+
+{\color{purple}
+Given $X : \U$ with $f : X \to I$, we define $k(X, f) : I \to \U$ by sending $i$ to $\fib_f(i)$.
+Unfolded:
+\[
+f(X, f)(i) := \sum_{x : X} f(x) = i
+\rlap{.}\]
+Given $Y : I \to U$, we need to show $k(h(Y)) =_{U^I} Y$.
+Using function extensionality, it suffices to show $k(h(Y))(i) =_U Y(i)$ given $i : I$.
+This we get from univalence of $\U$ and the equivalence
+\begin{align*}
+k(h(Y))(i)
+&\simeq
+\sum_{(i', y) : \sum_{i:I} Y(i)} i' = i
+\\&\simeq
+\sum_{(i', p) : \sum_{i':I} i' = i} Y(i')
+\\&\simeq
+Y(i)
+\rlap{.}
+\end{align*}
+The second line reassociates dependent sums.
+The third line uses that $\sum_{i':I} i' = i$ is contractible with center $(i, \refl_i)$ (together with dependent sums preserving equivalences).
+}
+
+\begin{enumerate}[resume]
+\item \label{circle-idempotent}
+\textbf{[4 points]}
+Consider $f : S^1 \to S^1$ with $H : f \circ f \sim f$.
+Show that
+\[
+\isEquiv(f) + \trunc{\isConst(f)}
+\rlap{.}
+\]
+You may use function extensionality and univalence.
+\end{enumerate}
+
+{\color{purple}
+Note that $f$ cannot be constant and an equivalence at the same time (2-out-of-6 would imply $S^1$ is contractible, but $S^1$ is not a set).
+Therefore, the goal (a binary sum of propositions) is still a proposition.
+Since $S^1$ is connected, we have $\trunc{f(\base) = \base}$.
+Since our goal is a proposition, we can thus assume $p : f(\base) = \base$.
+
+Recall the characterization of the loop space of $S^1$.
+It tells us that the function $\Z \to \base = \base$ sending $k$ to $\Sloop^k$ is an equivalence.
+That means there is unique $k : \Z$ such that $p^{-1} \cdot \ap_f(\Sloop) \cdot p = \Sloop^k$.
+So we have
+\[
+\ap_f(\Sloop) = p \cdot \Sloop^k \cdot p^{-1}
+\rlap{.}
+\]
+
+Recall that $f \sim g$ requires $\alpha : f(\base) = g(\base)$ making the following square commute:
+\[
+\begin{tikzcd}
+  f(\base)
+  \ar[r, equal, "\alpha"]
+  \ar[d, equal, "\ap_f(\Sloop)"]
+&
+  g(\base)
+  \ar[d, equal, "\ap_g(\Sloop)"]
+\\
+  f(\base)
+  \ar[r, equal, "\alpha"]
+&
+  g(\base)
+\rlap{.}
+\end{tikzcd}
+\]
+We will show $f \sim \id$ or $f \sim \const_{\base}$.
+In both cases, we set $\alpha := p$.
+For $g := \id$, the condition is $\Sloop^k = \Sloop$.
+For $g := \const_{\base}$, it is $\Sloop^k = \refl_\base$.
+So it suffices to show $k = 1$ or $k = 0$.
+
+We compute
+\begin{align*}
+\ap_{f \circ f}(\Sloop))
+&=
+\ap_f(\ap_f(\Sloop))
+\\&=
+\ap_f(p \cdot \Sloop^k \cdot p^{-1})
+\\&=
+\ap_f(p) \cdot \ap_f(\Sloop)^k \cdot \ap_f(p)^{-1}
+\\&=
+\ap_f(p) \cdot (p \cdot \Sloop^k \cdot p^{-1})^k \cdot \ap_f(p)^{-1}
+\\&=
+(\ap_f(p) \cdot p) \cdot \Sloop^{k^2} \cdot (\ap_f(p) \cdot p)^{-1}
+\rlap{.}
+\end{align*}
+
+We plug the formulas for $\ap_{f \circ f}(\Sloop))$ and $\ap_f(\Sloop)$ into naturality of $H$ at $\Sloop$:
+\[
+\begin{tikzcd}
+  \base
+  \ar[r, equal, "(\ap_f(p) \cdot p)^{-1}", left]
+  \ar[d, equal, "\Sloop^{k^2}"']
+&[0.5cm]
+  f(f(\base))
+  \ar[r, equal, "H_\base"]
+  \ar[d, equal, "\ap_{f \circ f}(\Sloop)"']
+&
+  f(\base)
+  \ar[r, equal, "p"]
+  \ar[d, equal, "\ap_{f}(\Sloop)"]
+&
+  \base
+  \ar[d, equal, "\Sloop^k"]
+\\
+  \base
+  \ar[r, equal, "(\ap_f(p) \cdot p)^{-1}"']
+&
+  f(f(\base))
+  \ar[r, equal, "H_\base"']
+&
+  f(\base)
+  \ar[r, equal, "p"']
+&
+  \base
+\rlap{.}
+\end{tikzcd}
+\]
+The function $\Sloop^{(-)}$ sends addition in $\Z$ to composition of loops in $S^1$ at $\base$.
+Since addition is commutative, so is composition of loops at $\base$.
+That is, $p \cdot q = q \cdot p$ for $p, q : \base = \base$.
+With this, the outer rectangle reduces to $\Sloop^{k^2} = \Sloop^k$, that is, $k^2 = k$, so $k = 1$ or $k = 0$.
+}
+
+\end{document}

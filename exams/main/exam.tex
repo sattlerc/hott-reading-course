@@ -1,0 +1,147 @@
+\documentclass[11pt]{article}
+
+\usepackage[left=3cm,right=3cm,top=3cm,bottom=3cm]{geometry}
+\usepackage{amssymb,amsmath,amsthm}
+\usepackage{mathtools}
+\usepackage{enumitem}
+\usepackage{tabularx}
+\usepackage{tikz-cd}
+\usepackage{parskip}
+
+\newcolumntype{Y}{>{\centering\arraybackslash}X}
+
+\DeclarePairedDelimiter\trunc\lVert\rVert
+
+\newcommand{\U}{\mathcal{U}}
+\newcommand{\N}{\mathbb{N}}
+\newcommand{\Z}{\mathbb{Z}}
+\newcommand{\F}{\mathbb{F}}
+\newcommand{\id}{\mathsf{id}}
+\newcommand{\ap}{\mathsf{ap}}
+
+\newcommand{\Fin}{\mathsf{Fin}}
+\newcommand{\refl}{\mathsf{refl}}
+\newcommand{\base}{\mathsf{base}}
+\newcommand{\Sloop}{\mathsf{loop}}
+\newcommand{\indeq}{\mathsf{ind\mbox{-}eq}}
+\newcommand{\inv}{\mathsf{inv}}
+
+\newcommand{\Nsucc}{S}
+\newcommand{\Nadd}{\mathsf{add}}
+\newcommand{\Nmul}{\mathsf{mul}}
+
+\newcommand{\fst}{\mathsf{pr}_1}
+\newcommand{\snd}{\mathsf{pr}_2}
+
+\newcommand{\isEquiv}{\mathsf{is\mbox{-}equiv}}
+\newcommand{\isConst}{\mathsf{is\mbox{-}constant}}
+
+\newcommand{\fix}{\mathsf{fix}}
+
+
+\begin{document}
+
+\title{Introduction to homotopy type theory: exam}
+\author{DAT235/DIT577/PhD reading course}
+\date{2024, January 12}
+
+\maketitle
+
+\begin{itemize}
+\item
+Grade scale:\qquad
+\begin{tabularx}{10cm}{|c|Y|Y|Y|Y|}
+  \hline
+  Fraction of points & $\geq 0$ & $\geq 2/5$ & $\geq 3/5$ & $\geq 4/5$
+  \\\hline
+  Grade & U & 3 & 4 & 5
+  \\\hline
+\end{tabularx}
+\item
+Time: 4 hours
+\item
+No aids allowed.
+\item
+You may use familiar facts from the course book or our discussions without justification, provided they do not already include the statement to be proven or depend on it.
+\item
+The axioms of function extensionality and univalence may only be used where stated. 
+\end{itemize}
+
+\newpage
+
+\begin{enumerate}
+
+\item \label{path-symmetry}
+\textbf{[4 points]}
+Fix a type $A$.
+The equality type of $A$ has an induction principle involving
+\[
+\indeq_{a,P} : P(a, \refl_a) \to \prod_{x : A} \prod_{p : a = x} P(x, p)
+\]
+for $a : A$ and a family of types $P(x, p)$ indexed by $x : A$ and $p : a = x$.
+
+Construct the following elements.
+Explicitly state the parameter $P$ when you use $\indeq$.
+\begin{enumerate}
+\item \label{path-symmetry:sym}
+$\displaystyle{
+\mathsf{f} : \prod_{x, y : A} x = y \to y = x
+},$
+\item \label{path-symmetry:sym-coh}
+$\displaystyle{
+\mathsf{g} : \prod_{x, y : A} \prod_{p : x = y} f(y, x, f(x, y, p)) = p
+}.$
+\end{enumerate}
+
+\item \label{truncation-level}
+\textbf{[4 points]}
+Given a type $A$, define what it means:
+\begin{enumerate}
+\item \label{truncation-level:contractible}
+for $A$ to be contractible,
+\item \label{truncation-level:general}
+for $A$ to have truncation level $n$ where $n : \Z_{\geq -2}$.
+\end{enumerate}
+
+\item \label{rolling-rule}
+\textbf{[4 points]}
+The type of \emph{fixpoints} of a function $u : X \to X$ is defined as
+\[
+\fix(u) := \sum_{x:X} u(x) = x
+\rlap{.}
+\]
+Given $f : A \to B$ and $g : B \to A$, show that $\fix(g \circ f) \simeq \fix(f \circ g)$.
+
+\item \label{equality-proposition}
+\textbf{[4 points]}
+Given a type $A$, show that the following are logically equivalent for $x, y : A$:
+\begin{enumerate}[label={(\arabic*)}]
+\item \label{equality-proposition:truncation}
+the propositional truncation $\trunc{x = y}$,
+\item \label{equality-proposition:impredicative}
+$Q(x) \simeq Q(y)$ for all families $Q$ of propositions indexed by $A$.
+\end{enumerate}
+
+\item \label{grothendieck-correspondence}
+\textbf{[4 points]}
+Let $\U$ be a univalent universe with $I : \U$.
+We have a function
+\[
+h : \U^I \to \sum_{X : \U} I^X
+\]
+sending $Y : I \to U$ to $(\sum_{i:I} Y(i), \fst)$.
+Define a function $k$ in the opposite direction with $k \circ h \sim \id$.
+You may use function extensionality.
+
+\item \label{circle-idempotent}
+\textbf{[4 points]}
+Consider $f : S^1 \to S^1$ with $H : f \circ f \sim f$.
+Show that
+\[
+\isEquiv(f) + \trunc{\isConst(f)}
+\rlap{.}
+\]
+You may use function extensionality and univalence.
+\end{enumerate}
+
+\end{document}

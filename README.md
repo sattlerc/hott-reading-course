@@ -91,8 +91,13 @@ The problems will be of similar format to the exercises you have solved.
 They may have different difficulties for the purpose of grade differentiation.
 
 **Update (December 23).**
-Here is a [practice exam](exam-practice.pdf?raw=true).
+Here is a [practice exam](exams/practice/).
 The actual exam will follow the same format, but may have different numbers and topics of problems.
+
+**Update (January 13).**
+Here is the [main exam](exams/main/) with solution suggestions.
+
+We will offer a re-exam in March or April.
 
 ### For PhD students
 
