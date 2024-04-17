@@ -1,0 +1,264 @@
+\documentclass[11pt]{article}
+
+\usepackage[left=3cm,right=3cm,top=3cm,bottom=3cm]{geometry}
+\usepackage{amssymb,amsmath,amsthm}
+\usepackage{mathtools}
+\usepackage{cleveref}
+\usepackage{enumitem}
+\usepackage{tabularx}
+\usepackage{tikz-cd}
+\usepackage{parskip}
+
+\newcolumntype{Y}{>{\centering\arraybackslash}X}
+
+\DeclarePairedDelimiter\trunc\lVert\rVert
+
+\newcommand{\U}{\mathcal{U}}
+\newcommand{\N}{\mathbb{N}}
+\newcommand{\Z}{\mathbb{Z}}
+\newcommand{\F}{\mathbb{F}}
+\newcommand{\id}{\mathsf{id}}
+\newcommand{\ap}{\mathsf{ap}}
+
+\newcommand{\judgeq}{\mathrel{\dot{=}}}
+
+\newcommand{\Fin}{\mathsf{Fin}}
+\newcommand{\refl}{\mathsf{refl}}
+\newcommand{\base}{\mathsf{base}}
+\newcommand{\concat}{\mathsf{concat}}
+\newcommand{\Sloop}{\mathsf{loop}}
+\newcommand{\indeq}{\mathsf{ind\mbox{-}eq}}
+\newcommand{\inv}{\mathsf{inv}}
+
+\newcommand{\inl}{\mathsf{inl}}
+\newcommand{\inr}{\mathsf{inr}}
+
+\newcommand{\Unit}{\mathsf{1}}
+\newcommand{\unit}{\star}
+
+\newcommand{\Nsucc}{S}
+\newcommand{\Nadd}{\mathsf{add}}
+\newcommand{\Nmul}{\mathsf{mul}}
+
+\newcommand{\fst}{\mathsf{pr}_1}
+\newcommand{\snd}{\mathsf{pr}_2}
+
+\newcommand{\isEquiv}{\mathsf{is\mbox{-}equiv}}
+\newcommand{\isConst}{\mathsf{is\mbox{-}constant}}
+
+\newcommand{\fix}{\mathsf{fix}}
+
+\newlist{conditions}{enumerate}{1}
+\setlist[conditions]{label=(\arabic*),itemsep=0ex}
+\Crefname{conditionsi}{Condition}{Conditions}
+\crefname{conditionsi}{condition}{conditions}
+
+\newlist{problems}{enumerate}{1}
+\setlist[problems]{label=\arabic*.,ref=\arabic*}
+\Crefname{problemsi}{Problem}{Problems}
+\crefname{problemsi}{Problem}{Problems}
+
+\pagenumbering{gobble}
+
+\begin{document}
+
+\title{Introduction to homotopy type theory: re-exam}
+\author{DAT235/DIT577/PhD reading course}
+\date{2024, March 13}
+
+\maketitle
+
+\begin{itemize}
+\item
+Grade scale:\qquad
+\begin{tabularx}{10cm}{|c|Y|Y|Y|Y|}
+  \hline
+  Fraction of points & $\geq 0$ & $\geq 2/5$ & $\geq 3/5$ & $\geq 4/5$
+  \\\hline
+  Grade & U & 3 & 4 & 5
+  \\\hline
+\end{tabularx}
+\item
+Time: 4 hours
+\item
+No aids allowed.
+\item
+You may use familiar facts from the course book or our discussions without justification, provided they do not already include the statement to be proven or depend on it.
+\item
+The axioms of function extensionality and univalence may only be used where stated. 
+\end{itemize}
+
+\newpage
+
+\begin{problems}
+
+\item \label{path-associative}
+\textbf{[4 points]}
+Consider a type $A$.
+The equality type of $A$ has an induction principle involving
+\[
+\indeq_{a,P} : P(a, \refl_a) \to \prod_{x : A} \prod_{p : a = x} P(x, p)
+\]
+for $a : A$ and a family of types $P(x, p)$ indexed by $x : A$ and $p : a = x$.
+
+Define composition of identifications in $A$ (you can choose its with judgmental behaviour).
+Explicitly state the parameter $P$ when you use $\indeq$.
+
+{\color{purple}
+For example, we define
+\begin{align*}
+\concat &: \prod_{x, y, z : A} (x = y) \to (y = z) \to (x = z)
+\\
+\concat(x, y, z, p, q) &= J_{P,x}(y, \lambda z', q'.\, q', y, p, z, q)
+\end{align*}
+where
+\[
+P(y', p') = \prod_{z' : A} \prod_{q' : y' = z'} (y' = z') \to (x = z')
+.\]
+This uses the book convention of applying an iterated function to a tuple of arguments.
+}
+
+\item \label{function-extensionality}
+\textbf{[4 points]}
+Consider a type $A$ and a family $B$ of types over $A$.
+State the axiom of extensionality for dependent functions from $a : A$ to $B(a)$.
+You may use the notion of equivalence without explanation, but everything else needs to be defined.
+
+{\color{purple}
+Let $f$ and $g$ be dependent functions from $a : A$ to $B(a)$.
+We have a function
+\[
+h_{f, g} : f = g \to \prod_{a : A} f(a) = g(a)
+\]
+defined by identification induction via
+\[
+h_{f, f}(\refl_f)(a) = \refl_{f(a)}
+.\]
+The axiom of function extensionality states that $h_{f, g}$ is an equivalence.
+}
+
+\item \label{path-split-equivalence}
+\textbf{[4 points]}
+Let $f : A \to B$ be a map such that:
+\begin{conditions}
+\item \label{path-split-equivalence:section} $f$ has a section,
+\item \label{path-split-equivalence:path-section} for $x, y : A$, the map $\ap_f : (x =_A y) \to (f(x) =_B f(y))$ has a section.
+\end{conditions}
+Prove that $f$ is an equivalence (bi-invertible).
+
+{\color{purple}
+By \cref{path-split-equivalence:section}, $f$ has a section $s : B \to A$.
+We show that $s$ is also a retraction of $f$.
+This means $s(f(a)) = a$ for $a : A$.
+Using \cref{path-split-equivalence:path-section}, it suffices to show $f(s(f(a))) = f(a)$.
+But this holds since $f(s(b)) = b$ for $b : B$.
+}
+
+\item \label{set-coproduct}
+\textbf{[4 points]}
+Consider sets $A$ and $B$.
+Show that the coproduct $A + B$ is again a set.
+You may use the characterization of identifications in $A + B$ from the course.
+
+{\color{purple}
+Given $x_0, x_1 : A + B$, we have to show that $x_0 = x_1$ is a proposition.
+By equality induction it suffices to show that $x = x$ is a proposition for $x : A + B$.
+We use coproduct elimination on $x$.
+
+\begin{itemize}
+\item
+For $x \judgeq \inl(a)$ with $a : A$, we have that $x = x$ is equivalent to $a = a$.
+This is a proposition since $A$ is a set.
+\item
+For $x \judgeq \inr(b)$ with $b : B$, we have that $x = x$ is equivalent to $b = b$.
+This is a proposition since $B$ is a set.
+\end{itemize}
+
+We finish by recalling that being a proposition is invariant under equivalence.
+}
+
+\item \label{yoneda}
+\textbf{[4 points]}
+Consider a type $A$ and a univalent universe $\U$ containing the identity types of $A$.
+Consider the function $v : A \to \U^A$ sending $x$ to $\lambda y.\,y =_A x$.
+Show that the action of $v$ on identifications has a section.
+You may use function extensionality.
+
+{\color{purple}
+Given $x_0, x_1 : A$, we must show that the action
+\[
+\ap_v : x_0 = x_1 \longrightarrow v(x_0) =_{\U^A} v(x_1)
+\]
+of $v$ on identifications has a retraction.
+We will more generally show that it is invertible.
+
+By 2-out-of-3, it suffices to show that the composition with the function extensionality equivalence
+\[
+h_{v(x_0), v(x_1)} : v(x_0) =_{\U^A} v(x_1) \longrightarrow \prod_{y : A} (y = x_0) =_U (y = x_1)
+\]
+from Problem~\ref{function-extensionality} is invertible.
+We further compose with the equivalence
+\[
+(y = x_0) =_U (y = x_1) \longrightarrow (y = x_0) \simeq (y = x_1)
+\]
+from univalence.
+It remains to show that the map 
+\[
+x_0 = x_1 \longrightarrow \prod_{y : A} (y = x_0) \simeq (y = x_1)
+\]
+sending reflexivity to the family of identity equivalences is invertible.
+By 2-out-of-3, it sufices to show that the map
+\[
+\prod_{y : A} (y = x_0) \simeq (y = x_1) \longrightarrow x_0 = x_1
+\]
+evaluating at $x_0$ and reflexivity is invertible.
+
+Every family of maps $e_y : (y = x_0) \to (y = x_1)$ for $y : A$ is a family of equivalences.
+To see this, we check that the induced map
+\[
+\sum_{y:A} (y = x_0) \to \sum_{y:A} (y = x_1)
+\]
+on total spaces is invertible.
+But both sides here are contractible singletons.
+
+It remains to show that the map
+\[
+\prod_{y : A} ((y = x_0) \to (y = x_1)) \longrightarrow x_0 = x_1
+\]
+evaluating at $x_0$ and reflexivity is invertible.
+This is equivalently
+\[
+\prod_{(y, p) : \sum_{y : A} y = x_0} y = x_1 \longrightarrow x_0 = x_1
+\]
+evaluating at $(x_0, \refl)$.
+This is invertible because $\sum_{y : A} y = x_0$ is a contractible singleton with center $(x_0, \refl)$.
+}
+
+\item \label{finite-types-add-point}
+\textbf{[4 points]}
+Let $\F$ be the univalent universe of finite types.
+Construct an equivalence
+\[
+\F \simeq \sum_{X:\F} X
+.\]
+You may use function extensionality.
+
+{\color{purple}
+In the forward direction, we define $f : \F \to \sum_{x : \F} X$ by sending $A$ to $(\Unit + A, \inl(\unit))$.
+In the reverse direction, we define $g : \sum_{x : \F} X \to \F$ by sending $X : \F$ with $x_0 : X$ to the type $\sum_{x : X} x \neq x_0$.
+Recall that finite types are sets with decidable equality.
+Therefore, $g(X, x_0)$ is a decidable subtype of $X$, which is again finite.
+
+We now check that these maps are inverse to each other.
+Given $A : \F$, using univalence of $\F$, we need to show that $\sum_{x : \Unit + A} x \neq \inl(\unit)$ is equivalent to $A$.
+Distributing the sum over the coproduct and using the characterization of identifications in coproducts, this is the coproduct of $\sum_{z : \Unit} z \neq \unit$ and $\sum_{a : A} \neg \emptyset$.
+Simplifying further, this is coproduct of the empty type and $A$, or just $A$.
+
+Given $X : \F$ with $x_0 : X$, using univalence and the characterization of identifications in dependent sums, we need to construct an equivalence $e : \unit + \sum_{x : X} x \neq x_0 \simeq X$ such that $e(\inl(\unit)) = x_0$.
+This suggests defining $e(\inl(\unit)) \judgeq x_0$ and $e(\inr(x, p)) = x$.
+
+}
+
+\end{problems}
+
+\end{document}
